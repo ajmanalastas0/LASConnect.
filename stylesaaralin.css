@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border: 3px solid #7fffd4; 
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #334139; /* Modern Dark Slate */
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.box1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card, .card1 ,.card3{
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover, .card1:hover ,.card3:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.card img,
+.card1 img ,
+.card3 img{
+    width: 110px;
+    height: auto;
+    margin-bottom: 15px;
+    /* Teal/Mint filter */
+    filter: brightness(0) saturate(100%) 
+            invert(45%) sepia(50%) saturate(500%) 
+            hue-rotate(130deg);
+    transition: 0.5s ease;
+}
+
+/* --- BINALIK KO NA ITO --- */
+.card:hover img {
+    content: url("images/book1.png"); 
+}
+
+.card1:hover img {
+    content: url("images/n2.png"); 
+}
+/* ------------------------- */
+
+.card p,
+.card1 p ,
+.card3 p{
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4a5550; 
+}
+
+.logout-btn {
+    margin-top: 30px;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #45b797; 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #334139;
+    box-shadow: 0 4px 12px rgba(69, 183, 151, 0.4);
+}

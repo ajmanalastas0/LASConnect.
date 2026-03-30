@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="aralincss.css">
+<title>Aralin 4</title>
+</head>
+<body>
+
+<!-- STEP 1 -->
+<div class="content-box" id="content1">
+<h2>Gawain sa Pagkatuto</h2>
+<p><b>Asignatura:</b> Filipino</p>
+<p><b>Baitang:</b> Senior High School</p>
+<p><b>Paksa:</b> Maikling Kuwento</p>
+<p><b>Pamagat:</b> Sa Lilim ng Manggahan</p>
+<p><b>Estratehiya:</b> Mapa ng Kuwento (Story Map)</p>
+<button onclick="showNext(1)">Sumunod</button>
+</div>
+
+<!-- STEP 2 -->
+<div class="content-box" id="content2" style="display:none;">
+<h2>Layunin ng Aralin</h2>
+<ul>
+<li>natutukoy ang mga element ng maikling kuwento (tauhan, tagpuan,  suliranin, banghay, wakas at aral); </li>
+<li>naiakikita ang pag-unawa sa pamamagitan ng mapa ng kuwento  (story map); at </li>
+<li>nakapagbibigay ng sariling repleksyon batay sa mensahe ng kuwento.</li>
+</ul>
+<button onclick="showPrevious(2)">Bumalik</button>
+<button onclick="showNext(2)">Sumunod</button>
+</div>
+
+<!-- STEP 3 -->
+<div class="content-box" id="content3" style="display:none;">
+<h2>Pagganyak</h2>
+<h3>Isipin at sagutin:</h3>
+<p>Kung ikaw ay may pangarap na hindi gusto ng iyong magulang o lolo/lola, ipaglalaban mo ba ito? Bakit? </p>
+<textarea name="Kung ikaw ay may pangarap na hindi gusto ng iyong magulang o lolo/lola, ipaglalaban mo ba ito? Bakit?" rows="6"></textarea>
+<button onclick="showPrevious(3)">Bumalik</button>
+<button onclick="showNext(3)">Sumunod</button>
+</div>
+
+<!-- STEP 4 -->
+<div class="content-box" id="content4" style="display:none;">
+<h2>Gawain A: Talasalitaan</h2><br><br>
+<p>
+Panuto: Ipares ang salita sa Hanay A sa tamang kahulugan sa Hanay B. <br><br>
+Hanay B <br></p>
+<label>1.Katayuan sa buhay :</label>
+<input type="text" name="Katayuan sa buhay"> <br><br>
+
+<label>2.Irigasyon :</label>
+<input type="text" name="Irigasyon"><br><br>
+
+<label>3.Pamayanan :</label>
+<input type="text" name="Pamayanan"><br><br>
+
+<label>4.Imbakan :</label>
+<input type="text" name="Imbakan"><br><br>
+
+<label>5.Yapak :</label>
+<input type="text" name="Yapak"><br><br>
+<p>
+    Hanay B<br> 
+A. Daluyan ng tubig sa bukid <br>
+B. Antas ng kalagayang panlipunan <br>
+C. Lalagyan ng ani <br>
+D. Bakas ng paa / talinghaga sa pagsunod <br>
+E. Komunidad ng mga tao <br>
+
+</p>
+
+<button onclick="showPrevious(4)">Bumalik</button>
+<button onclick="showNext(4)">Sumunod</button>
+</div>
+
+<!-- STEP 5 -->
+<div class="content-box" id="content5" style="display:none;">
+<h2>Aralin / Babasahin</h2>
+<p>Basahin ang maikling kwento at sagutin ang mga tanong at gawain sa
+ibaba. </p>
+<img src="images/b4.png" alt="" class="boook"><br>
+<p><b>Sa Lilim ng Manggahan</b></p>
+<p class="story">
+    Sa isang malawak na hacienda sa lalawigan, magkatabing lumaki sina 
+Miguel at Tomas. Si Miguel ay apo ni Mang Isko, ang nagmamay-ari ng 
+pinakamalaking manggahan sa kanilang bayan. Samantalang si Tomas 
+naman ay anak ng isang mahirap na manggagawa sa bukid na matagal nang 
+namamasukan sa hacienda. Magkaiba man ang kanilang katayuan sa buhay, 
+iisa ang tibok ng kanilang puso sa tuwing sila’y nagtatakbuhan sa lilim ng 
+matatandang punong mangga, nagbabahagi ng tinapay, at nangangarap 
+tungkol sa hinaharap.
+</p>
+<p class="story">
+    Mula pagkabata, malinaw na ang nais ni Mang Isko para sa kanyang 
+apo. “Ikaw ang magmamana ng manggahan, Miguel,” madalas niyang 
+sabihin. “Ikaw ang magpapatuloy ng ating sinimulan.” Ngunit sa puso ni 
+Miguel ay may ibang pangarap na umuusbong, ang maging inhinyero. Gusto 
+niyang matutong magdisenyo ng mga tulay at irigasyon upang makatulong 
+sa mga magsasaka sa kanilang lugar.  
+</p>
+<p class="story">
+    Hindi naging madali ang desisyon ni Miguel. Alam niyang masasaktan 
+ang kanyang lolo, subalit buo ang kanyang loob. Sa tulong ng pagsusumikap 
+at ilang iskolarship, nakapagtapos siya ng pag-aaral. Habang si Miguel ay 
+nasa lungsod, nanatili si Tomas sa hacienda. Kahit mahirap ang buhay, hindi 
+niya iniwan ang manggahan. Tinulungan niya si Mang Isko sa pangangasiwa 
+mula sa pag-aayos ng irigasyon, pakikipag-usap sa mga manggagawa, 
+hanggang sa pagbabantay ng ani tuwing anihan. Unti-unti, natutunan ni 
+Tomas ang bawat sulok ng manggahan, pati ang ugali ng lupa at takbo ng 
+panahon. 
+</p>
+<p class="story">
+    Nang makapagtapos si Miguel bilang inhinyero, bumalik siya sa 
+hacienda dala ang tuwa at pag-asang maibahagi ang kanyang natutunan. 
+Ngunit sinalubong siya ng mabigat na balita. Nagkasakit si Mang Isko at hindi 
+na kayang pangasiwaan ang buong manggahan. Kinailangan ng taong 
+maaaring tumulong sa pamamahala nito.  
+</p>
+<p class="story">
+    Hindi nag-atubili si Tomas. Kahit wala siyang pormal na pinag-aralan, 
+dala niya ang karanasan at malasakit. Araw-araw niyang inaalagaan ang 
+manggahan habang inaalagaan din ang lolo ng kanyang kaibigan. Nang 
+makita ni Miguel ang ginagawa ni Tomas, napuno ng pasasalamat ang 
+kanyang dibdib. Doon niya napagtantong hindi lamang dugo ang nagmamana 
+ng responsibilidad kundi ang pusong handang maglingkod.  
+</p>
+<p class="story">
+    Pinagsama ni Miguel ang kanyang kaalaman bilang inhinyero at ang 
+karanasan ni Tomas sa bukid. Nagpagawa sila ng mas maayos na daluyan ng 
+tubig, inayos ang imbakan ng ani, at naglatag ng plano para sa mas 
+makatarungang sahod ng mga manggagawa. Unti-unting bumuti ang ani ng 
+manggahan, at gumaan ang buhay ng mga taong umaasa rito. Isang hapon, 
+habang nakaupo si Mang Isko sa ilalim ng punong mangga, pinagmamasdan 
+ang dalawang magkaibigang abala sa pagpaplano, napangiti siya. “Hindi ka 
+man sumunod sa yapak ko, Miguel,” mahinang sabi niya, “mas malayo ang 
+narating mo. At si Tomas… ikaw ang patunay na ang tunay na tagapagmana 
+ng lupa ay ang taong nagmamahal dito.” 
+</p>
+<p class="story">
+    Sa lilim ng manggahan, napagtanto nina Miguel at Tomas na ang 
+pangarap ay hindi kailangang magsarili. Maaaring magkaiba ang landas, 
+ngunit kapag pinagsama ang kaalaman, sipag, at malasakit, mas nagiging 
+matibay ang hinaharap—hindi lamang para sa kanila, kundi para sa buong 
+pamayanan. 
+</p>
+<p class="story">
+    Aral: Ang tunay na tagumpay ay hindi nasusukat sa kung sino ang 
+nagmamay-ari, kundi sa kung sino ang handang magmalasakit at 
+maglingkod. Ang pangarap ay mas nagiging makabuluhan kapag ginagamit 
+para sa kapakanan ng iba.  
+</p>
+
+<button onclick="showPrevious(5)">Bumalik</button>
+<button onclick="showNext(5)">Sumunod</button>
+</div>
+
+<!-- STEP 6 -->
+<div class="content-box" id="content6" style="display:none;">
+<h2>Gawain B: Story Map</h2>
+<p>Panuto: Punan ang bawat bahagi batay sa iyong pag-unawa sa kuwento. </p>
+<label>Pamagat ng Kuwento:</label>
+<textarea name="Pamagat"></textarea>
+
+<label>Tauhan</label>
+<textarea name="tauhan"></textarea>
+
+<label>Tagpuan</label>
+<textarea name="tagpuan"></textarea>
+
+<label>Panahon/ Oras </label>
+<textarea name="panahon"></textarea>
+
+<label>Suliranin/ Problema</label>
+<textarea name="suliranin"></textarea>
+
+<label>Banghay (Simula)</label>
+<textarea name="banghay1"></textarea>
+
+<label>Banghay (Wakas)</label>
+<textarea name="banghay2"></textarea>
+
+<label>Banghay (Gitna)</label>
+<textarea name="banghay3"></textarea>
+
+<label>Pananaw  
+(Unang panauhan, ikalawa 
+panauhan o ikatlong panauhan)</label>
+<textarea name="pananaw"></textarea>
+
+<label>Uri ng Tunggalian  
+(Halimbawa; Tauhan vs Tauhan) at 
+ipaliwanag kung bakit.</label>
+<textarea name="tunggalian"></textarea>
+
+<label>Aral/ Mensahe ng Kwento</label>
+<textarea name="aral"></textarea>
+<button onclick="showPrevious(6)">Bumalik</button>
+<button onclick="showNext(6)">Sumunod</button>
+</div>
+
+<!-- STEP 7 -->
+<div class="content-box" id="content7" style="display:none;">
+<h2>Pag-unawa</h2>
+<p>Panuto: Sagutin ang sumusunod sa 1–2 pangungusap: </p><br>
+<p>1. Bakit hindi agad nasunod ni Miguel ang nais ng kanyang lolo?</p>
+<textarea name="Bakit hindi agad nasunod ni Miguel ang nais ng kanyang lolo?"></textarea>
+
+<p>Paano ipinakita ni Tomas ang kanyang malasakit sa manggahan at kay Mang Isko??</p>
+<textarea name="Paano ipinakita ni Tomas ang kanyang malasakit sa manggahan at kay Mang Isko?"></textarea>
+
+<p>3. Ano ang ipinapakita ng pagtatapos ng kuwento tungkol sa pagkakaibigan?</p>
+<textarea name="Ano ang ipinapakita ng pagtatapos ng kuwento tungkol sa pagkakaibigan?"></textarea>
+
+<button onclick="showPrevious(7)">Bumalik</button>
+<button onclick="showNext(7)">Sumunod</button>
+</div>
+
+<!-- STEP 8 -->
+<div class="content-box" id="content8" style="display:none;">
+<h2>Malikhaing Gawain</h2>
+<p>Panuto: Sumulat ng maikling talata tungkol sa kung paano mo gagamitin 
+ang iyong pangarap o kakayahan upang makatulong sa iba, tulad ng ginawa 
+nina Miguel at Tomas. </p><br>
+<textarea rows="6" name="malikhain"></textarea>
+<p>Pamantayan sa Pagmamarka (Rubric – Maikli) <br> 
+❖ Nilalaman at Mensahe (5 pts) – malinaw na naipakita ang ideya ng 
+kapayapaan at pag-aalaga <br>
+❖ Pagkamalikhain (5 pts) – orihinal ang ideya at presentasyon <br>
+❖ Kalinisan at Ayos (5 pts) – maayos ang gawa at malinaw ang <br>
+sulat/guhit<br> 
+❖ Pagsunod sa Panuto (5 pts) – nasunod ang napiling gawain <br>
+❖ Kabuuan: 20 puntos </p>
+<button onclick="showPrevious(8)">Bumalik</button>
+<button onclick="showNext(8)">Sumunod</button>
+</div>
+
+<!-- STEP 9 -->
+<div class="content-box" id="content9" style="display:none;">
+<h2>Pagninilay</h2>
+<p>Panuto: Kumpletuhin ang pangungusap: </p>
+<p>Mula sa kuwento, natutunan ko na :</p>
+<textarea rows="6" name="Mula sa kuwento, natutunan ko na"></textarea>
+<p>at magagamit ko ito sa aking buhay sa pamamagitan ng</p>
+<textarea rows="6" name="at magagamit ko ito sa aking buhay sa pamamagitan ng"></textarea>
+<button onclick="showPrevious(9)">Bumalik</button>
+<button onclick="finish()">Natapos</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const currentUser = localStorage.getItem("currentUser");
+    if(!currentUser){
+        alert("Mangyaring mag-log in muna!");
+        window.location.href = "index.html";
+        return;
+    }
+
+    // Ginamit ang 'answers4' para sa data ng Aralin 4
+    let answers = JSON.parse(localStorage.getItem("answers4")) || {};
+
+    // ==========================================
+    // SHOW NEXT WITH REQUIRED FIELD VALIDATION
+    // ==========================================
+    window.showNext = function(current){
+        const currentBox = document.getElementById("content" + current);
+        const inputs = currentBox.querySelectorAll("input, textarea");
+        let allFilled = true;
+
+        // Validation: Check kung may laman ang bawat input/textarea
+        inputs.forEach(input => {
+            if(input.value.trim() === ""){
+                allFilled = false;
+                input.style.borderColor = "red"; // Markahan ang blangko
+            } else {
+                input.style.borderColor = "#7fffd4"; // Ibalik sa mint color
+            }
+        });
+
+        if(!allFilled){
+            alert("Pakisagutan muna ang lahat ng katanungan sa bahaging ito bago magpatuloy.");
+            return; 
+        }
+
+        const next = document.getElementById("content"+(current+1));
+        if(next){
+            document.getElementById("content"+current).style.display = "none";
+            next.style.display = "block";
+            window.scrollTo(0, 0); // Balik sa itaas ng screen
+        }
+    }
+
+    window.showPrevious = function(current){
+        const prev = document.getElementById("content"+(current-1));
+        if(prev){
+            document.getElementById("content"+current).style.display = "none";
+            prev.style.display = "block";
+            window.scrollTo(0, 0);
+        }
+    }
+
+    // =========================
+    // LOAD SAVED ANSWERS
+    // =========================
+    if(answers[currentUser]){
+        for(let step=3; step<=9; step++){
+            const box = document.getElementById("content"+step);
+            if(box){
+                box.querySelectorAll("input, textarea").forEach(input => {
+                    if(answers[currentUser][input.name]){
+                        input.value = answers[currentUser][input.name];
+                        input.disabled = true; // I-lock ang input kung tapos na
+                    }
+                });
+            }
+        }
+        window.finish = function(){
+            window.location.href = "mgaaralin.html";
+        }
+    } else {
+        // =========================
+        // FINISH (SAVE DATA)
+        // =========================
+        window.finish = function(){
+            const lastBox = document.getElementById("content9");
+            const lastInputs = lastBox.querySelectorAll("textarea");
+            let lastFilled = true;
+
+            lastInputs.forEach(input => {
+                if(input.value.trim() === "") {
+                    lastFilled = false;
+                    input.style.borderColor = "red";
+                }
+            });
+
+            if(!lastFilled){
+                alert("Kumpletuhin muna ang huling pagninilay.");
+                return;
+            }
+
+            answers[currentUser] = {};
+            for(let step=3; step<=9; step++){
+                const box = document.getElementById("content"+step);
+                if(box){
+                    box.querySelectorAll("input, textarea").forEach(input => {
+                        answers[currentUser][input.name] = input.value;
+                        input.disabled = true;
+                    });
+                }
+            }
+            
+            localStorage.setItem("answers4", JSON.stringify(answers));
+            alert("Mahusay! Matagumpay mong natapos ang Aralin 4.");
+            window.location.href = "mgaaralin.html";
+        }
+    }
+});
+</script>
+
+</body>
+</html>

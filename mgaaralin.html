@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MGA ARALIN</title>
+    <link rel="stylesheet" href="stylesaaralin.css">
+</head>
+<body>
+    <div class="box">
+
+
+        <h1 class="title">MGA ARALIN</h1>
+
+
+        <div class="box1">
+            
+            <label class="card" title="Sa Likod ng Uniporme" onclick="aralin1()">
+                <img src="images/book2.png" alt="">
+                <p>Aralin 1</p>
+            </label>
+
+            <label class="card" onclick="aralin2()" title="Ang Pangarap ni Tatay">
+                <img src="images/book2.png" alt="">
+                <p>Aralin 2</p>
+            </label>
+
+            <label class="card" onclick="aralin3()" title="Ang Hardin sa Likod ng Aking Tahanan">
+                <img src="images/book2.png" alt="">
+                <p>Aralin 3</p>
+            </label>
+
+            <label class="card" onclick="aralin4()" title=" Sa Lilim ng Manggahan ">
+                <img src="images/book2.png" alt="">
+                <p>Aralin 4</p>
+            </label>
+
+            <label class="card" onclick="aralin5()" title="Ang Huling Upuan sa Silid">
+                <img src="images/book2.png" alt="">
+                <p>Aralin 5</p>
+            </label>
+            <label class="card1" onclick="aralin6()" title="Rubric">
+                <img src="images/n1.png" alt="">
+                <p>Rubric</p>
+            </label>
+            <label class="card3" onclick="viewAnswers()" title="Tignan ang aking mga sagot">
+                <img src="images/notebook.png" alt=""> <p>Aking mga Sagot</p>
+            </label>
+        </div>
+        <button class="logout-btn" onclick="aj()">Log Out</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+    const currentUser = localStorage.getItem("currentUser");
+    if(!currentUser){
+        alert("Please log in first!");
+        window.location.href = "index.html";
+    }
+});
+        function aj(){
+            window.location.href = "index.html";
+        }
+        function aralin1(){
+            window.location.href = "aralin.html";
+        }
+        function aralin2(){
+            window.location.href = "aralin2.html";
+        }
+        function aralin3(){
+            window.location.href = "aralin3.html";
+        }
+        function aralin4(){
+            window.location.href = "aralin4.html";
+        }
+        function aralin5(){
+            window.location.href = "aralin5.html";
+        }
+        function aralin6(){
+            window.location.href = "huli.html";
+        }
+        function viewAnswers(){
+        window.location.href = "sagotko.html";
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aralin2</title>
+    <link rel="stylesheet" href="aralincss.css">
+</head>
+<body>
+
+<!-- STEP 1: Introduction -->
+<div class="content-box" id="content1">
+    <h2>Gawain sa Pagkatuto</h2>
+    <p><strong>Asignatura:</strong> Filipino</p>
+    <p><strong>Baitang:</strong> Senior High School</p>
+    <p><strong>Paksa:</strong> Pag-unawa sa Tekstong Naratibo</p>
+    <p><strong>Pamagat ng Babasahin:</strong> Ang Pangarap ni Tatay</p>
+    <p><strong>Estratehiya:</strong> Think-Write-Share (Isipin-Isulat-Ibahagi)</p>
+    <button class="next-btn" onclick="showNext(1)">Sumunod</button>
+</div>
+
+<!-- STEP 2: Layunin -->
+<div class="content-box" id="content2" style="display:none;">
+    <h2>Layunin ng Aralin</h2>
+    <ul>
+        <li>nakauunawa sa binasang tekstong naratibo,</li>
+        <li>naiuugnay ang binasa sa sariling karanasan at damdamin,</li>
+        <li>naipapahayag ang sariling pananaw sa pamamagitan ng pagsulat,</li>
+        <li>nakabubuo ng aral mula sa kuwento, at</li>
+        <li>naipakita ang kahalagahan ng sakripisyo at edukasyon.</li>
+    </ul>
+    <button class="next-btn" onclick="showPrevious(2)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(2)">Sumunod</button>
+</div>
+
+<!-- STEP 3: Panimulang Gawain -->
+<div class="content-box" id="content3" style="display:none;">
+    <h2>Panimulang Gawain: Emoji ng Damdamin</h2>
+    <p>Isipin: Ano ang nararamdaman mo tungkol sa tema ng sakripisyo at pangarap ng magulang?</p>
+    <p>Isulat: Pumili ng emoji na naglalarawan sa iyong damdamin.
+        <br>Masaya : 🙂 Sobrang Saya : 😄 Sobrang Lungkot : 😭 Malungkot : 😔 Galit : 😡</p>
+    <textarea name="emoji_damdamin" rows="2" placeholder="Isulat dito ang emoji..."></textarea><br>
+    <p>Ibahagi: Ipaliwanag sa isang pangungusap kung bakit iyon ang napili mo.</p>
+    <textarea name="paliwanag_emoji" rows="3" placeholder="Ipaliwanag dito..."></textarea>
+    <br><br>
+    <button class="next-btn" onclick="showPrevious(3)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(3)">Sumunod</button>
+</div>
+
+<!-- STEP 4: Talasalitaan -->
+<div class="content-box" id="content4" style="display:none;">
+    <h2>Gawain A: Talasalitaan (Pinaghalo-halong Salita)</h2>
+    <p>Panuto: Basahin at unawain ang mga pangungusap. Piliin at ayusin ang 
+mga pinaghalo-halong titik upang mabuo ang wastong salitang tinutukoy 
+ng pahayag. Isulat ang tamang sagot sa patlang bago ang bilang. <br>
+        <br>Halimbawa: <br>
+YOKIRIPSAS = Sakripisyo <br>
+– Pagtitiis at pagbibigay para sa pamilya.</p> <br>
+
+    <label>1. ROLSAA =</label>
+    <input name="ROLSAA" type="text" name="talisalitaan1" placeholder="Sagutin dito"><br>
+    -Ginagamit ni Tatay sa pagbubungkal ng lupa.<br>
+    <label><br>2. KUBDI =</label>
+    <input name="KUBDI" type="text" name="talisalitaan2" placeholder="Sagutin dito"><br>
+– Dito nagtatrabaho si Tatay araw-araw. <br>
+    <label><br>3. OYARB =</label>
+    <input name="OYARB" type="text" name="talisalitaan3" placeholder="Sagutin dito"><br>
+– Tahimik pa ang buong lugar habang papasok sa bukid si Tatay. <br>
+    <label><br>4. IKAPAGSAPALARN =</label>
+    <input name="IKAPAGSAPALARN" type="text" name="talisalitaan4" placeholder="Sagutin dito"><br>
+– Paghaharap sa hirap para sa pamilya. <br>
+    <label><br>5. HABUYANAP =</label>
+    <input name="HABUYANAP" type="text" name="talisalitaan5" placeholder="Sagutin dito"><br>
+– Ikabubuhay ni Tatay ang pagsasaka. <br>
+    <button class="next-btn" onclick="showPrevious(4)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(4)">Sumunod</button>
+</div>
+
+<!-- STEP 5: Aralin/Babasahin -->
+<div class="content-box" id="content5" style="display:none;">
+    <h2>Aralin / Babasahin</h2>
+    <p>Panuto: Basahin ang tekstong “Ang Pangarap ni Tatay.” Pagkatapos, sagutin 
+ang mga tanong at gawain sa ibaba. Isulat ang sagot sa patlang o sa hiwalay 
+na papel kung kinakailangan.</p>
+    <img src="images/b2.png" alt="" class="boook"><br>
+    <p><strong>Ang Pangarap ni Tatay</strong></p>
+    <p class="story">
+May tatlong anak si Tatay: sina Ella, Bela, at Shiela. Bata pa 
+lamang sila ay nasanay na silang makita si Tatay na maagang 
+gumigising upang pumunta sa bukid. Habang tulog pa ang buong 
+baryo, tangan niya ang asarol at baong tinapay. Handa ng 
+makipagsapalaran sa ilalim ng araw para sa kanyang pamilya. Si Nanay 
+naman ay naiiwan sa bahay. Siya ang nag-aalaga sa mga bata, 
+nagluluto ng pagkain, at nag-aasikaso sa lahat ng gawain sa tahanan.  
+    </p>
+    <p class="story">
+Noong kabataan ni Tatay, pangarap niyang makapagtapos ng 
+pag-aaral. Gusto sana niyang maging guro. Subalit kinailangan niyang 
+huminto sa pag-aaral upang tumulong sa pamilya. Mula noon, 
+pagsasaka na lamang ang naging hanapbuhay niya. Sa bawat 
+pagtatanim at pag-aani, tila kasabay niyang inihahasik ang pag-asa na 
+balang araw ay matutupad sa kanyang mga anak ang pangarap na 
+hindi niya naabot.  
+    </p>
+    <p class="story">
+Hindi naging madali ang buhay. May mga panahong kapos ang 
+ani at kulang ang pera. May mga gabing tinutulog ni Tatay ang pagod 
+sa banig habang iniisip kung paano muli makababayad sa mga 
+gastusin sa paaralan. Ngunit sa kabila ng hirap, hindi niya kailanman 
+pinahinto sa pag-aaral ang kanyang mga anak. Lagi niyang paalala, 
+“Mag-aral kayo nang mabuti. Iyan ang kayamanang hindi 
+mananakaw.”
+    </p>
+    <p class="story">
+Lumipas ang mga taon. Ang tatlong anak ni Tatay ay 
+nagsipagtapos ng pag-aaral. Sa wakas, isa-isa silang naging 
+lisensyadong guro. Isang umaga, habang nag-aalmusal ang pamilya, 
+inabot ng mga anak kay Tatay ang kanilang mga lisensya. Napaupo si 
+Tatay at napangiti, ngunit hindi niya napigilang mapaluha. Tahimik 
+niyang pinahid ang mga luha sa gilid ng kanyang mata. Luha ng pagod 
+na napalitan ng tuwa.
+    </p>
+    <p class="story">
+Sa sandaling iyon, naunawaan ng mga anak na ang pangarap ni 
+Tatay ay hindi tuluyang nawala at ipinagpatuloy lamang niya ito sa 
+kanila. At sa bawat mag-aaral na kanilang tuturuan, dala-dala nila ang 
+kuwento ng isang amang magsasaka na minsang nangarap, 
+nagsakripisyo, at nagtagumpay sa paraang hindi niya inakala.
+    </p>
+    <p>Aral: Ang mga pangarap na isinakripisyo ng magulang ay maaaring mamukadkad sa tagumpay ng kanilang mga anak.</p>
+    <p>Tema: Sakripisyo ng magulang, edukasyon, pag-asa</p>
+    <button class="next-btn" onclick="showPrevious(5)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(5)">Sumunod</button>
+</div>
+
+<!-- STEP 6: Pagsasanay -->
+<div class="content-box" id="content6" style="display:none;">
+    <h2>Gawain B: Isipin (Think)</h2>
+    <p>Panuto: Isipin ang sagot sa mga tanong bago isulat.</p>
+    <label><br>1. Ano ang pangarap ni Tatay para sa kanyang mga anak?</label><br>
+    <textarea name="Ano ang pangarap ni Tatay para sa kanyang mga anak?" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <label>2. Ano ang mga sakripisyo ni Tatay upang maabot ang pangarap para sa kanyang pamilya?</label>
+    <textarea name="Ano ang mga sakripisyo ni Tatay upang maabot ang pangarap para sa kanyang pamilya?" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <label>3. Sa anong paraan ipinagpatuloy ng mga anak ang pangarap ni Tatay?</label><br>
+    <textarea name="Sa anong paraan ipinagpatuloy ng mga anak ang pangarap ni Tatay?" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <button class="next-btn" onclick="showPrevious(6)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(6)">Sumunod</button>
+</div>
+
+<!-- STEP 7: Pagpapalalim -->
+<div class="content-box" id="content7" style="display:none;">
+    <h2>Pagpapalalim</h2>
+    <br>Panuto: Isulat ang sagot sa loob ng 2–3 pangungusap para sa bawat tanong. <br><br>
+    <label>1. Paano mo maiuugnay sa sarili mong buhay ang dedikasyon ni Tatay?</label><br>
+    <textarea name="Paano mo maiuugnay sa sarili mong buhay ang dedikasyon ni Tatay?" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <label>2. Ano ang natutunan mo tungkol sa sakripisyo at edukasyon mula sa kuwento?</label><br>
+    <textarea name="Ano ang natutunan mo tungkol sa sakripisyo at edukasyon mula sa kuwento?" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <label>3. Kung ikaw ay anak ni Tatay, paano mo maipapakita na pinapahalagahan mo ang pangarap ng magulang mo?</label><br>
+    <textarea name=" Kung ikaw ay anak ni Tatay, paano mo maipapakita na pinapahalagahan mo ang pangarap ng magulang mo?" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <button class="next-btn" onclick="showPrevious(7)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(7)">Sumunod</button>
+</div>
+
+<!-- STEP 8: Malikhaing Gawain -->
+<div class="content-box" id="content8" style="display:none;">
+    <h2>Gawain D: Malikhaing Gawain</h2><br>
+    <p>Panuto: Ibahagi ang iyong sagot sa isa o dalawang kaklase (o sa guro kung
+pang-indibidwal ang activity). Makinig sa kanilang ideya at ikumpara sa
+sarili mong pananaw.
+:</p>
+    <textarea name="malikhain" rows="4" placeholder="Isulat dito..."></textarea><br>
+<p>Rubrik (Simpleng Batayan ng Pagmamarka)  
+Pamantayan    Puntos <br>   
+Malinaw ang iniisip bago isulat (Think) 5<br>  
+Kumpleto at maayos ang pagsusulat (Write) 10<br>
+Naibahagi nang maayos sa klase (Share) 5<br>
+Kabuuan   20<br>     
+</p>
+    <button class="next-btn" onclick="showPrevious(8)">Bumalik</button>
+    <button class="next-btn" onclick="showNext(8)">Sumunod</button>
+</div>
+
+<!-- STEP 9: Pagninilay -->
+<div class="content-box" id="content9" style="display:none;">
+    <h2>Pagninilayan Mo!</h2>
+    <p>Panuto: Kumpletuhin ang pangungusap: </p>
+    <label>Maiuugnay ko ang dedikasyon ni Tatay sa aking buhay dahil:</label><br>
+    <textarea name="Maiuugnay ko ang dedikasyon ni Tatay sa aking buhay dahil" rows="3" placeholder="Isulat dito..."></textarea>
+
+    <label>Natutuhan ko na ang pagsasakripisyo ay:</label><br>
+    <textarea name="Natutuhan ko na ang pagsasakripisyo ay" rows="3" placeholder="Isulat dito..."></textarea><br>
+
+    <button class="next-btn" onclick="showPrevious(9)">Bumalik</button>
+    <button class="next-btn" onclick="finish()">Natapos</button>
+</div>
+
+<!-- JS: Next/Back + Autosave + Finish -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    const currentUser = localStorage.getItem("currentUser");
+    if(!currentUser){
+        alert("Please log in first!");
+        window.location.href = "index.html";
+        return;
+    }
+
+    // Siguraduhin na 'answers2' ang gamit para sa Aralin 2
+    let answers = JSON.parse(localStorage.getItem("answers2")) || {};
+
+    // ==========================================
+    // SHOW NEXT WITH VALIDATION
+    // ==========================================
+    window.showNext = function(current){
+        const currentBox = document.getElementById("content" + current);
+        const inputs = currentBox.querySelectorAll("input, textarea");
+        let allFilled = true;
+
+        inputs.forEach(input => {
+            if(input.value.trim() === ""){
+                allFilled = false;
+                input.style.borderColor = "red";
+            } else {
+                input.style.borderColor = "#7fffd4";
+            }
+        });
+
+        if(!allFilled){
+            alert("Mangyaring sagutan muna ang lahat ng patlang.");
+            return;
+        }
+
+        document.getElementById("content"+current).style.display = "none";
+        document.getElementById("content"+(current+1)).style.display = "block";
+        window.scrollTo(0, 0);
+    }
+
+    window.showPrevious = function(current){
+        document.getElementById("content"+current).style.display = "none";
+        document.getElementById("content"+(current-1)).style.display = "block";
+    }
+
+    // ==========================================
+    // LOAD SAVED ANSWERS (Para ma-display kung tapos na)
+    // ==========================================
+    if(answers[currentUser]){
+        document.querySelectorAll("input, textarea").forEach(input => {
+            if(input.name && answers[currentUser][input.name]){
+                input.value = answers[currentUser][input.name];
+                input.disabled = true;
+            }
+        });
+        window.finish = function() { 
+            window.location.href = "mgaaralin.html"; 
+        };
+    } else {
+        // ==========================================
+        // FINISH & SAVE DATA (FLAT FORMAT)
+        // ==========================================
+        window.finish = function(){
+            const lastBox = document.getElementById("content9");
+            const lastInputs = lastBox.querySelectorAll("textarea");
+            let lastFilled = true;
+            
+            lastInputs.forEach(i => { 
+                if(i.value.trim() === ""){ 
+                    lastFilled = false; 
+                    i.style.borderColor = "red";
+                } 
+            });
+
+            if(!lastFilled) { 
+                alert("Pakisagutan ang pagninilay bago matapos."); 
+                return; 
+            }
+
+            // Gagawa ng bagong object para sa user na ito
+            answers[currentUser] = {}; 
+
+            // I-save lahat ng inputs gamit ang name attribute para sa Summary
+            document.querySelectorAll("input, textarea").forEach(input => {
+                if(input.name){
+                    answers[currentUser][input.name] = input.value;
+                    input.disabled = true;
+                }
+            });
+
+            // I-save sa 'answers2' para sa Aralin 2
+            localStorage.setItem("answers2", JSON.stringify(answers));
+            alert("Salamat! Matagumpay na na-save ang iyong mga sagot sa Aralin 2.");
+            window.location.href = "mgaaralin.html";
+        }
+    }
+});
+</script>
+</body>
+</html>

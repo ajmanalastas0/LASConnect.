@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bb1">
+    <div class="k1">
+    <img src="images/download.png" alt="" class="aa1">
+    </div>
+    <div class="k2">
+    <img src="images/logo_1.png" alt="">
+    <h1 class="a11">Mag log sa LASConnect</h1> 
+    <div class="aj">
+        <input type="text" placeholder="username" class="user" id="user">
+    <input type="password" placeholder="password" class="pass" id="pass">
+    <label class="show">
+    <input type="checkbox" onclick="togglePass()" class="chck"> show password
+    </label>
+    <button class="b1" onclick="log()">Mag log-in</button>
+    <button class="b2" onclick="sign()">Gumawa ng account</button>
+    </div>
+    </div>
+    </div>
+    <script>
+        function log(){
+    const user = document.getElementById("user").value;
+    const pass = document.getElementById("pass").value;
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    if(users.find(u => u.username === user) && users.find(u => u.password === pass)){
+        localStorage.setItem("currentUser", user); 
+        window.location.href = "last.html"; 
+    } else {
+        alert("mali ang iyong password o username");
+        document.getElementById("user").value = "";
+        document.getElementById("pass").value = "";
+    }
+}
+        function sign(){
+            window.location.href = "signin.html";
+        }
+        function togglePass(){
+    const passInput = document.getElementById("pass");
+
+    if(passInput.type === "password"){
+        passInput.type = "text";
+    } else {
+        passInput.type = "password";
+    }
+}
+    </script>
+</body>
+</html>

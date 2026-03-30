@@ -1,0 +1,106 @@
+/* Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-image: url(images/back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Box */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.95); /* Mas solid na white para lutang ang text */
+    border: 3px solid #7fffd4; /* Aquamarine border mula sa pic */
+    border-radius: 20px;
+    width: 85%;
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 50px 40px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.content-box h2 {
+    text-align: center;
+    color: #334139; /* Deep Charcoal para professional */
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Text & list */
+.content-box p, 
+.content-box ul, 
+.content-box li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.8; /* Mas maluwag na line height para madaling basahin */
+    color: #4a5550; /* Malinis na dark gray */
+}
+
+/* Text input & Textarea common styling */
+.text-input, textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #d1ede4; /* Soft mint border */
+    background-color: #fcfdfd;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: inherit;
+}
+
+.text-input:focus, textarea:focus {
+    outline: none;
+    border-color: #45b797;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(127, 255, 212, 0.4);
+}
+
+/* Buttons */
+button {
+    display: block;
+    margin: 30px auto 0; /* Centered button */
+    padding: 14px 45px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #45b797; /* Mint theme */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Modern Pill shape */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(69, 183, 151, 0.3);
+}
+
+button:hover {
+    background-color: #334139; /* Dark Slate hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Story */
+.story {
+    text-indent: 50px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Book image */
+.boook {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 1px solid #7fffd4;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}

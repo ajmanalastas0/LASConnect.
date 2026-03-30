@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aralin1</title>
+    <link rel="stylesheet" href="aralincss.css">
+</head>
+<body>
+
+    <!-- STEP 1: Introduction -->
+    <div class="content-box" id="content1">
+        <h2>Gawain sa Pagkatuto</h2>
+        <p><strong>Asignatura:</strong> Filipino</p>
+        <p><strong>Baitang:</strong> Senior High School</p>
+        <p><strong>Paksa:</strong> Tekstong Naratibo</p>
+        <p><strong>Pamagat ng Babasahin:</strong> Sa Likod ng Uniporme</p>
+        <p><strong>Estratehiya:</strong> Talahanayan ng KWL (Know–Want to Know–Learned)</p>
+        <p>(Alam Ko – Gusto Kong Malaman – Natutuhan Ko)</p>
+        <button class="next-btn" onclick="showNext(1)">Sumunod</button>
+    </div>
+
+    <!-- STEP 2: Layunin ng Aralin -->
+    <div class="content-box" id="content2" style="display:none;">
+        <h2>Layunin ng Aralin</h2>
+        <p>Pagkatapos ng gawain, ang mag-aaral ay inaasahang:</p>
+        <ul>
+            <li>nakauunawa sa binasang tekstong naratibo,</li>
+            <li>natutukoy ang mga elemento ng naratibo (tauhan, tagpuan, banghay, aral), at</li>
+            <li>nakapagninilay sa karanasan ng pangunahing tauhan at naiuugnay ito sa sariling buhay.</li>
+        </ul>
+        <button class="next-btn" onclick="showPrevious(2)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(2)">Sumunod</button>
+    </div>
+
+    <!-- STEP 3: Panimulang Gawain (Textbox) -->
+    <div class="content-box" id="content3" style="display:none;">
+        <h2>Panimulang Gawain (Pagganyak)</h2>
+        <p>Dugtungan Mo!<br>
+        Panuto: Sagutin ang bawat tanong sa loob ng 3 segundo (isusulat sa papel o sasabihin nang pasalita).<br>
+        Walang maling sagot—basta tapat.</p>
+
+        <form>
+            <p>Mga Tanong (I-flash o basahin isa-isa): </p><br>
+            <label>1. Isang salita na naglalarawan sa pagiging SHS student:</label><br>
+            <input name="naglalarawan sa SHS student" type="text" class="text-input"><br>
+
+            <label>2. Isang hamon na naranasan mo kamakailan:</label><br>
+            <input name="hamon na naranasan mo" type="text" class="text-input"><br>
+
+            <label>3. Isang bagay na nakakapagod sa school:</label><br>
+            <input name="Isang bagay na nakakapagod sa school" type="text" class="text-input"><br>
+
+            <label>4. Isang bagay na nagbibigay sa’yo ng lakas ng loob:</label><br>
+            <input name="Isang bagay na nagbibigay sa’yo ng lakas ng loob" type="text" class="text-input"><br>
+
+            <label>5. Isang pangarap mo pagkatapos ng SHS:</label><br>
+            <input name="Isang pangarap mo pagkatapos ng SHS" type="text" class="text-input"><br>
+        </form>
+
+        <button class="next-btn" onclick="showPrevious(3)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(3)">Sumunod</button>
+    </div>
+
+    <!-- STEP 4: Talasalitaan -->
+    <div class="content-box" id="content4" style="display:none;">
+        <h2>Gawain A: Talasalitaan</h2>
+        <p>Panuto: Basahin ang kahulugan at tukuyin ang tamang salita. Punan ang mga nawawalang letra:</p>
+        <form>
+            <label>1. S _ M _ K _</label><br>
+            <br>
+            Kahulugan: Tigil sa pagsisikap dahil sa hirap o kabiguan.
+            <input type="text" class="text-input"><br>
+            <label>2. P _ U _ A N _ I _</label><br><br>
+            Kahulugan: Paghingi ng kapatawaran sa nagawang pagkukulang o mali.
+            <input name="P _ U _ A N _ I _" type="text" class="text-input"><br>
+            <label>3. M _ T _ T _ G</label><br><br>
+            Kahulugan: Matibay ang loob; hindi madaling maapektuhan ng problema.
+            <input name="M _ T _ T _ G" type="text" class="text-input"><br>
+            <label>4. H _ M _ N</label><br><br>
+            Kahulugan: Pagsubok o suliranin na kailangan harapin.
+            <input name="H _ M _ N" type="text" class="text-input"><br>
+            <label>5. T A _ U_ P _ Y</label><br><br>
+            Kahulugan: Pagkakamit ng layunin o magandang resulta mula sa pagsisikap.
+            <input name="T A _ U_ P _ Y" type="text" class="text-input"><br>
+        </form>
+
+        <button class="next-btn" onclick="showPrevious(4)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(4)">Sumunod</button>
+    </div>
+
+    <!-- STEP 5: Aralin / Babasahin -->
+    <div class="content-box" id="content5" style="display:none;">
+        <h2>Aralin / Babasahin</h2>
+        <p>Basahin ang tekstong naratibo. Sagutin ang mga tanong at gawain sa ibaba. 
+Isulat ang sagot sa patlang o sa hiwalay na papel kung kinakailangan. </p>
+        <img src="images/b1.png" alt="" class="boook"><br>
+        <strong>Sa Likod ng Uniporme:</strong>
+        <p class="story">
+Si Lisa ay isang matiyagang mag-aaral sa Senior High School na araw
+araw nakikipagbuno sa oras, pagod, at pangarap. Bago pa man sumikat ang 
+araw, bumabangon na siya upang maghanda hindi lang para sa klase, kundi 
+pati sa maliit nilang tindahan na tinutulungan niyang asikasuhin tuwing 
+umaga. Minsan, nahuhuli siya sa biyahe, minsan naman ay kulang sa tulog pero 
+bihira siyang lumiban sa klase. 
+        </p>
+        <p class="story">
+Sa paaralan, hindi puro talino ang laban. May mga performance task, 
+group project, at presentasyon na kailangang pagsabay-sabayin. Isang beses, 
+halos sumuko si Lisa nang mapagsabihan siya ng guro dahil hindi niya agad 
+naipasa ang proyekto. Umuwi siyang mabigat ang dibdib, dala ang pakiramdam 
+na parang hindi siya sapat.
+        </p>
+        <p class="story">
+Sa gabing iyon, tahimik siyang naupo sa tabi ng bintana. Pinagmasdan 
+niya ang ilaw ng mga sasakyan sa kalsada at naisip ang dahilan kung bakit siya 
+nagsimula. Hindi para patunayan sa iba na kaya niya kundi para patunayan sa 
+sarili na may patutunguhan ang lahat ng pagod na ito. Kinaumagahan, maaga 
+siyang pumasok, humingi ng paumanhin, at muling inayos ang kaniyang 
+gawain. 
+        </p>
+        <p class="story">
+Hindi agad gumaan ang lahat. May mga araw na talagang mabigat. Pero 
+natutunan ni Lisa na hindi kailangang maging perpekto para magpatuloy. Ang 
+kailangan lang ay maging matatag sa buhay. Sa bawat pagsubok, mas tumitibay 
+ang loob niya, at sa bawat maliit na tagumpay, mas lumilinaw ang direksiyon 
+ng kaniyang mga pangarap. 
+        </p>
+        <p class="story">
+Nakapagtapos ng buo ang loob at hawak ang diploma na inaasam ng 
+bawat mag-aaral. Sa likod ng uniporme ay may naghihintay na tagumpay na 
+magbubukas sa panibagong hamon ng kanyang haharapin.
+        </p>
+        <button class="next-btn" onclick="showPrevious(5)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(5)">Sumunod</button>
+    </div>
+
+    <!-- STEP 6: Pagsasanay / KWL Chart -->
+    <div class="content-box" id="content6" style="display:none;">
+        <h2>PAGSASANAY</h2>
+        <p>Gawain A: KWL Tsart (Paunang Pagbasa at Pagkatapos ng Pagbasa)</p><br>
+        <p>Panuto: Punan ang bawat kahon. </p><br>
+        <form>
+            <label>A (Alam ko)<br>Ano na ang alam mo tungkol sa mga hamon ng isang mag-aaral sa SHS? (1-2 ideya)</label><br>
+            <input name="A (Alam ko)" type="text" class="text-input"><br>
+            <label>G (Gusto kong malaman)<br>Ano ang gusto mong malaman tungkol sa pinagdaraanan ng pangunahing tauhan sa kwento? (2 tanong)</label><br>
+            <input name="(Gusto kong malaman)" type="text" class="text-input"><br>
+            <label>N (Natutuhan ko)<br>Ano ang natutuhan mo matapos basahin ang kuwento? (3 ideya)</label><br>
+            <input name="(Natutuhan ko)" type="text" class="text-input"><br>
+        </form>
+        <button class="next-btn" onclick="showPrevious(6)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(6)">Sumunod</button>
+    </div>
+
+    <!-- STEP 7: Mga Elemento ng Naratibo -->
+    <div class="content-box" id="content7" style="display:none;">
+        <h2>Gawain B: Mga Elemento ng Naratibo</h2>
+        <p>Panuto: Punan ang talaan:</p>
+        <form>
+            <label>Tauhan:</label><br>
+            <input name="Tauhan" type="text" class="text-input"><br>
+            <label>Tagpuan:</label><br>
+            <input name="Tagpuan" type="text" class="text-input"><br>
+            <label>Suliranin:</label><br>
+            <input name="Suliranin" type="text" class="text-input"><br>
+            <label>Kasukdulan:</label><br>
+            <input name="Kasukdulan" type="text" class="text-input"><br>
+            <label>Wakas:</label><br>
+            <input name="Wakas" type="text" class="text-input"><br>
+        </form>
+        <button class="next-btn" onclick="showPrevious(7)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(7)">Sumunod</button>
+    </div>
+
+    <!-- STEP 8: Pag-unawa at Pagpapalalim -->
+    <div class="content-box" id="content8" style="display:none;">
+        <h2>Gawain C: Pag-unawa at Pagpapalalim</h2>
+        <p>Panuto: Sagutan ang mga sumusunod:</p>
+        <form>
+            <label>1. Ano ang pangunahing suliraning hinarap ni Lisa sa kuwento?</label><br>
+            <textarea name="Ano ang pangunahing suliraning hinarap ni Lisa sa kuwento?" class="text-input" rows="3"></textarea><br>
+
+            <label>2. Ano desisyon ang ginawa ni Lisa matapos siyang mapagsabihan ng guro?</label><br>
+            <textarea name="Ano desisyon ang ginawa ni Lisa matapos siyang mapagsabihan ng guro?" class="text-input" rows="3"></textarea><br>
+
+            <label>3. Ano ang ipinahihiwatig ng pamagat na “Sa Likod ng Uniporme” tungkol sa karanasan ng isang mag-aaral?</label><br>
+            <textarea name="Ano ang ipinahihiwatig ng pamagat na “Sa Likod ng Uniporme” tungkol sa karanasan ng isang mag-aaral?" class="text-input" rows="3"></textarea><br>
+
+            <label>4. Sa anong bahagi ng kuwento ka pinaka-nakaugnay? Bakit?</label><br>
+            <textarea name=" Sa anong bahagi ng kuwento ka pinaka-nakaugnay? Bakit?" class="text-input" rows="3"></textarea><br>
+
+            <label>5. Paano mo maiaangkop sa sarili mong buhay ang aral ng kuwento?</label><br>
+            <textarea name="Paano mo maiaangkop sa sarili mong buhay ang aral ng kuwento?" class="text-input" rows="3"></textarea><br>
+        </form>
+        <button class="next-btn" onclick="showPrevious(8)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(8)">Sumunod</button>
+    </div>
+
+    <!-- STEP 9: Malikhaing Gawain -->
+    <div class="content-box" id="content9" style="display:none;">
+        <h2>Gawain D: Malikhaing Gawain</h2>
+        <p>Panuto: Sumulat ng isang maikling talata (4–5 pangungusap) tungkol sa sarili mong karanasan bilang mag-aaral sa SHS na may kaugnayan sa pagod, pangarap, o pagsubok.</p>
+        <textarea name="maikling talata" class="text-input" rows="6" placeholder="Isulat dito..."></textarea>
+        <p>Rubrik (Simpleng Batayan ng Pagmamarka) <br>
+Pamantayan <br>
+Kumpletong Sagot 
+Puntos 
+10 <br>
+Malinaw na Pagpapahayag 5 <br>
+Kaugnayan sa Paksa 
+5 <br>
+Kabuuan 
+20</p>
+        <button class="next-btn" onclick="showPrevious(9)">Bumalik</button>
+        <button class="next-btn" onclick="showNext(9)">Sumunod</button>
+    </div>
+    <!-- STEP 10: Pagninilayan Mo -->
+<div class="content-box" id="content10" style="display:none;">
+    <h2>Pagninilayan Mo!</h2>
+    <p>Tapusin ang pangungusap:</p>
+    <p><em>Ang pinakamahalagang aral na natutunan ko sa buhay ni Lisa bilang isang SHS ay...</em></p>
+    <textarea name=" pinakamahalagang aral na natutunan" class="text-input" rows="6" placeholder="Isulat dito ang iyong sagot..."></textarea>
+    <br><br>
+    <button class="next-btn" onclick="showPrevious(10)">Bumalik</button>
+    <button class="next-btn" onclick="finish()">Natapos</button>
+</div>
+    <!-- JS for Next/Back -->
+   <script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const currentUser = localStorage.getItem("currentUser");
+    if(!currentUser){
+        alert("Please log in first!");
+        window.location.href = "index.html";
+        return;
+    }
+
+    // Kinukuha ang mga sagot para sa Aralin 1
+    let answers = JSON.parse(localStorage.getItem("answers")) || {};
+
+    // ==========================================
+    // SHOW NEXT / PREVIOUS WITH VALIDATION
+    // ==========================================
+    window.showNext = function(current){
+        const currentBox = document.getElementById("content" + current);
+        const inputs = currentBox.querySelectorAll("input, textarea");
+        let allFilled = true;
+
+        inputs.forEach(input => {
+            if(input.value.trim() === ""){
+                allFilled = false;
+                input.style.borderColor = "red"; 
+            } else {
+                input.style.borderColor = "#7fffd4"; 
+            }
+        });
+
+        if(!allFilled){
+            alert("Mangyaring sagutan muna ang lahat ng katanungan bago magpatuloy.");
+            return; 
+        }
+
+        const next = document.getElementById("content"+(current+1));
+        if(next){
+            document.getElementById("content"+current).style.display = "none";
+            next.style.display = "block";
+            window.scrollTo(0,0);
+        }
+    }
+
+    window.showPrevious = function(current){
+        const prev = document.getElementById("content"+(current-1));
+        if(prev){
+            document.getElementById("content"+current).style.display = "none";
+            prev.style.display = "block";
+            window.scrollTo(0,0);
+        }
+    }
+
+    // ==========================================
+    // LOAD SAVED ANSWERS (Flat Format)
+    // ==========================================
+    if(answers[currentUser]){
+        document.querySelectorAll("input, textarea").forEach(input => {
+            if(input.name && answers[currentUser][input.name]){
+                input.value = answers[currentUser][input.name];
+                input.disabled = true; // I-lock ang input kung tapos na
+            }
+        });
+        
+        // Palitan ang finish function para bumalik na lang sa dashboard
+        window.finish = function() {
+            window.location.href = "mgaaralin.html";
+        };
+    } else {
+        // ==========================================
+        // FINISH & SAVE DATA (Flat Format)
+        // ==========================================
+        window.finish = function(){
+            const lastBox = document.getElementById("content10");
+            const lastInputs = lastBox.querySelectorAll("textarea");
+            let lastFilled = true;
+
+            lastInputs.forEach(input => {
+                if(input.value.trim() === ""){
+                    lastFilled = false;
+                    input.style.borderColor = "red";
+                }
+            });
+
+            if(!lastFilled){
+                alert("Sagutan muna ang huling pagninilay.");
+                return;
+            }
+
+            // Simulan ang pag-save sa Flat Format
+            answers[currentUser] = {}; 
+            
+            document.querySelectorAll("input, textarea").forEach(input => {
+                if(input.name){
+                    // Ang 'name' attribute ang gagamiting Label sa Summary
+                    answers[currentUser][input.name] = input.value;
+                }
+            });
+
+            localStorage.setItem("answers", JSON.stringify(answers));
+            alert("Salamat sa iyong sagot! Matagumpay mong natapos ang Aralin 1.");
+            window.location.href = "mgaaralin.html";
+        }
+    }
+});
+</script>
+</body>
+</html>

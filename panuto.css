@@ -1,0 +1,108 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    /* Nilinis ang background properties */
+    background: url('images/back.png') no-repeat center center fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95); /* Glassmorphism effect */
+    max-width: 900px;
+    margin: auto;
+    padding: 50px; /* Dinagdagan ang space sa loob */
+    border-radius: 20px;
+    border: 2px solid #7fffd4; /* Mint border */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #334139; /* Dark Slate Charcoal */
+    font-weight: 800;
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #45b797; /* Mint Accent */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro, .jj1 {
+    text-align: justify;
+    line-height: 1.8; /* Mas maluwag na line height para sa readability */
+    margin-bottom: 25px;
+    color: #4a5550;
+    font-size: 17px;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #334139;
+    font-size: 20px;
+    border-left: 5px solid #7fffd4; /* Nilagyan ng side accent */
+    padding-left: 15px;
+    text-align: left;
+}
+
+ol, ul {
+    line-height: 1.8;
+    padding-left: 25px;
+    color: #4a5550;
+    text-align: left;
+    font-size: 17px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.paalala {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0fffb; /* Light Mint box for reminders */
+    border-radius: 10px;
+    border-left: 5px solid #45b797;
+    text-align: left;
+    color: #334139;
+}
+
+.closing {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #556b60;
+}
+
+button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #45b797; /* Mint color */
+    color: white;
+    border: none;
+    border-radius: 50px; /* Modern Pill shape */
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(69, 183, 151, 0.3);
+}
+
+button:hover {
+    background-color: #334139; /* Dark Slate hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}

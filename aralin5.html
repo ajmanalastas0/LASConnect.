@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="aralincss.css">
+<title>Aralin 5</title>
+</head>
+<body>
+
+<!-- STEP 1 -->
+<div class="content-box" id="content1">
+<h2>Gawain sa Pagkatuto</h2>
+<p><b>Asignatura:</b> Filipino</p>
+<p><b>Baitang:</b> Senior High School</p>
+<p><b>Paksa:</b> Tekstong Naratibo</p>
+<p><b>Pamagat:</b> Ang Huling Upuan sa Silid</p>
+<p><b>Estratehiya:</b> Story Mountain</p>
+<button onclick="showNext(1)">Sumunod</button>
+</div>
+
+<!-- STEP 2 -->
+<div class="content-box" id="content2" style="display:none;">
+<h2>Layunin ng Aralin</h2>
+<ul>
+<li>natutukoy ang tema at mensahe ng binasang kuwento;</li>
+<li>naipapaliwanag ang panloob na tunggalian ng tauhan;</li>
+<li>nakapagbibigay ng personal na pagninilay batay sa karanasan ng tauhan;</li>
+<li>nakagagawa ng maikling malikhaing output;</li>
+<li>nakapaglalahad ng daloy ng kuwento gamit ang Story Mountain.</li>
+</ul>
+<button onclick="showPrevious(2)">Bumalik</button>
+<button onclick="showNext(2)">Sumunod</button>
+</div>
+
+<!-- STEP 3 -->
+<div class="content-box" id="content3" style="display:none;">
+<h2>Pagganyak</h2>
+<p>Panuto: Sagutin nang buo at simple ang tanong.</p>
+<label>1. Natatakot ka bang magsalita sa harap ng klase?</label><br>
+<input type="text" name="1. Natatakot ka bang magsalita sa harap ng klase?"><br><br>
+
+<label>2. Kapag natatakot ka, ano ang karaniwan mong ginagawa?</label><br>
+<textarea name="reaksyon" rows="4"></textarea>
+<button onclick="showPrevious(3)">Bumalik</button>
+<button onclick="showNext(3)">Sumunod</button>
+</div>
+
+<!-- STEP 4 -->
+<div class="content-box" id="content4" style="display:none;">
+<h2>Gawain A: Talasalitaan</h2>
+<p>Panuto: Bigyang-kahulugan ang mga salita at gamitin sa pangungusap.</p>
+<p>Talasalitaan (5 minuto) <br>
+Bigyan ng kahulugan batay sa konteksto:</p>
+<label>1. Pagdududa:</label><br>
+<textarea name="pagdududa"></textarea><br>
+<label>2. Tunggalian:</label><br>
+<textarea name="tunggalian"></textarea><br>
+<label>3. Realisasyon:</label><br>
+<textarea name="realisasyon"></textarea><br>
+<label>4. Tapang:</label><br>
+<textarea name="tapang"></textarea><br>
+<button onclick="showPrevious(4)">Bumalik</button>
+<button onclick="showNext(4)">Sumunod</button>
+</div>
+
+<!-- STEP 5 -->
+<div class="content-box" id="content5" style="display:none;">
+<h2>Aralin / Babasahin</h2>
+<p>Basahin ang maikling kwento at sagutin ang mga tanong at gawain sa
+ibaba.</p>
+<img src="images/b5.png" alt="" class="boook"><br>
+<p><b class="ttt">Ang Huling Upuan sa Silid</b></p>
+<p class="story">
+Palaging sa huling upuan nakaupo si Andrea. Doon siya ligtas—malayo 
+sa mata ng guro, malayo sa tanong, malayo sa pagkakamali. Tahimik siyang 
+mag-aaral; maraming iniisip, kakaunti ang sinasabi. 
+</p>
+<p class="story">
+Isang araw, may ipinagawang presentasyon ang guro. Kailangan itong 
+ipagtanggol sa harap ng buong klase. Walang makakatanggi. Walang pwedeng 
+magtago.
+</p>
+<p class="story">
+Naghanda si Andrea. Inaral niya ang paksa, ngunit mas inaral niya ang 
+sarili niyang takot. Sa salamin, paulit-ulit niyang binibigkas ang mga salita—
+hindi para maging perpekto, kundi para lang hindi umatras. 
+</p>
+<p class="story">
+Nang araw ng presentasyon, nanginginig ang kamay niya. Mabigat ang 
+dibdib. Ngunit nagsalita siya. 
+</p>
+<p class="story">
+Mahina sa simula. Pagkaraan, mas malinaw. Hanggang sa tumatag ang 
+boses niya at humupa ang panginginig. Hindi siya ang pinakamahusay sa 
+klase, ngunit natalo niya ang mas matagal na kalaban—ang sariling 
+pagdududa.
+</p>
+<p class="story">
+  Tahimik ang silid matapos siyang magsalita. Hindi dahil wala silang 
+pakialam, kundi dahil nakinig sila.
+</p>
+<p class="story">
+  Paglabas ng klase, napangiti si Andrea. Napagtanto niyang kaya pala 
+niya. 
+</p>
+<p class="story">Mula noon, hindi na siya palaging nasa huling upuan. Minsan, nasa 
+gitna na. 
+Minsan, 
+sa 
+harap. 
+Hindi dahil nawala ang takot—kundi dahil natutunan niyang humarap kahit 
+may takot.</p>
+<button onclick="showPrevious(5)">Bumalik</button>
+<button onclick="showNext(5)">Sumunod</button>
+</div>
+
+<!-- STEP 6 -->
+<div class="content-box" id="content6" style="display:none;">
+<h2>Gawain B: Story Mountain</h2>
+<p>Panuto: Punan ang sumusunod:</p>
+<label>Simula:</label><br>
+<textarea name="simula"></textarea><br>
+<label>Suliranin:</label><br>
+<textarea name="suliranin"></textarea><br>
+<label>Kasukdulan:</label><br>
+<textarea name="kasukdulan"></textarea><br>
+<label>Kakalasan:</label><br>
+<textarea name="kakalasan"></textarea><br>
+<label>Wakas:</label><br>
+<textarea name="wakas"></textarea><br>
+<button onclick="showPrevious(6)">Bumalik</button>
+<button onclick="showNext(6)">Sumunod</button>
+</div>
+
+<!-- STEP 7 -->
+<div class="content-box" id="content7" style="display:none;">
+<h2>Gawain C: Pag-unawa</h2>
+<p>Sagutin nang buo ang mga tanong:</p>
+<label>1. Bakit palaging sa huling upuan umuupo si Andrea?</label><br>
+<textarea name="Bakit palaging sa huling upuan umuupo si Andrea?"></textarea><br>
+<label>2. Ano ang ipinagawa ng guro at bakit ito naging mahirap para kay Andrea?</label><br>
+<textarea name=" Ano ang ipinagawa ng guro at bakit ito naging mahirap para kay Andrea?"></textarea><br>
+<label>3. Ano ang pinakamahalagang pagbabagong nangyari kay Andrea sa kuwento?</label><br>
+<textarea name="Ano ang pinakamahalagang pagbabagong nangyari kay Andrea sa kuwento?"></textarea><br>
+<label>4. Ano ang sinisimbolo ng “huling upuan” sa tunay na buhay?</label><br>
+<textarea name="Ano ang sinisimbolo ng “huling upuan” sa tunay na buhay?"></textarea><br>
+<label>5. Bakit mahalagang harapin ang sariling takot kahit hindi tayo perpekto?</label><br>
+<textarea name="Bakit mahalagang harapin ang sariling takot kahit hindi tayo perpekto?"></textarea><br>
+<button onclick="showPrevious(7)">Bumalik</button>
+<button onclick="showNext(7)">Sumunod</button>
+</div>
+
+<!-- STEP 8 -->
+<div class="content-box" id="content8" style="display:none;">
+<h2>Gawain D: Mini-monologo</h2>
+<p>Isipin mong ikaw si Andrea bago ang presentasyon. Ano ang sasabihin mo sa sarili mo?</p>
+<textarea name="Isipin mong ikaw si Andrea bago ang presentasyon. Ano ang sasabihin mo sa sarili mo?" rows="6"></textarea><br>
+<img src="images/rubriks.png" alt="" class="boook"><br>
+<button onclick="showPrevious(8)">Bumalik</button>
+<button onclick="showNext(8)">Sumunod</button>
+</div>
+
+<!-- STEP 9 -->
+<div class="content-box" id="content9" style="display:none;">
+<h2>Pagninilay</h2>
+<p>Tapusin ang pangungusap:</p>
+<p>Simula ngayon, haharapin ko ang aking takot sa pamamagitan ng </p>
+<textarea name="Simula ngayon, haharapin ko ang aking takot sa pamamagitan ng" rows="4"></textarea><br>
+<button onclick="showPrevious(9)">Bumalik</button>
+<button onclick="finish()">Natapos</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const currentUser = localStorage.getItem("currentUser");
+    if(!currentUser){
+        alert("Mangyaring mag-log in muna!");
+        window.location.href = "index.html";
+        return;
+    }
+
+    // Ginamit ang 'answers5' para sa data ng Aralin 5
+    let answers = JSON.parse(localStorage.getItem("answers5")) || {};
+
+    // ==========================================
+    // SHOW NEXT WITH REQUIRED FIELD VALIDATION
+    // ==========================================
+    window.showNext = function(current){
+        const currentBox = document.getElementById("content" + current);
+        const textInputs = currentBox.querySelectorAll("textarea, input[type='text']");
+        const radioGroups = currentBox.querySelectorAll("input[type='radio']");
+        let allFilled = true;
+
+        // 1. Validate Textareas and Text Inputs
+        textInputs.forEach(input => {
+            if(input.value.trim() === ""){
+                allFilled = false;
+                input.style.borderColor = "red"; 
+            } else {
+                input.style.borderColor = "#7fffd4"; 
+            }
+        });
+
+        // 2. Validate Radio Buttons (Step 3 specific)
+        if(radioGroups.length > 0){
+            const name = radioGroups[0].name;
+            const checked = currentBox.querySelector(`input[name="${name}"]:checked`);
+            if(!checked){
+                allFilled = false;
+                alert("Pumili muna ng sagot (Oo o Hindi).");
+            }
+        }
+
+        if(!allFilled){
+            if(radioGroups.length === 0) alert("Pakisagutan muna ang lahat ng patlang.");
+            return; 
+        }
+
+        const next = document.getElementById("content"+(current+1));
+        if(next){
+            document.getElementById("content"+current).style.display = "none";
+            next.style.display = "block";
+            window.scrollTo(0, 0);
+        }
+    }
+
+    window.showPrevious = function(current){
+        const prev = document.getElementById("content"+(current-1));
+        if(prev){
+            document.getElementById("content"+current).style.display = "none";
+            prev.style.display = "block";
+            window.scrollTo(0, 0);
+        }
+    }
+
+    // =========================
+    // LOAD SAVED ANSWERS
+    // =========================
+    if(answers[currentUser]){
+        for(let step=3; step<=9; step++){
+            const box = document.getElementById("content"+step);
+            if(box){
+                box.querySelectorAll("input, textarea").forEach(input => {
+                    if(answers[currentUser].hasOwnProperty(input.name)){
+                        if(input.type === "radio"){
+                            if(input.value === answers[currentUser][input.name]){
+                                input.checked = true;
+                            }
+                            input.disabled = true;
+                        } else {
+                            input.value = answers[currentUser][input.name];
+                            input.disabled = true;
+                        }
+                    }
+                });
+            }
+        }
+        window.finish = function(){
+            window.location.href = "mgaaralin.html";
+        }
+    } else {
+        // =========================
+        // FINISH (SAVE DATA)
+        // =========================
+        window.finish = function(){
+            const lastBox = document.getElementById("content9");
+            const lastInput = lastBox.querySelector("textarea");
+            
+            if(lastInput.value.trim() === ""){
+                lastInput.style.borderColor = "red";
+                alert("Sagutan muna ang huling pagninilay.");
+                return;
+            }
+
+            answers[currentUser] = {};
+            for(let step=3; step<=9; step++){
+                const box = document.getElementById("content"+step);
+                if(box){
+                    box.querySelectorAll("input, textarea").forEach(input => {
+                        if(input.type === "radio"){
+                            if(input.checked) answers[currentUser][input.name] = input.value;
+                        } else {
+                            answers[currentUser][input.name] = input.value;
+                        }
+                        input.disabled = true;
+                    });
+                }
+            }
+            localStorage.setItem("answers5", JSON.stringify(answers));
+            alert("Salamat! Matagumpay mong natapos ang Aralin 5. Handa ka na para sa susunod na hamon!");
+            window.location.href = "mgaaralin.html";
+        }
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="aralincss.css">
+<title>Aralin 3</title>
+</head>
+<body>
+
+<!-- STEP 1 -->
+<div class="content-box" id="content1">
+<h2>Gawain sa Pagkatuto</h2>
+<p>Asignatura: Filipino</p>
+<p>Baitang: Senior High School</p>
+<p>Paksa: Tekstong Deskriptibo</p>
+<p>Pamagat ng Babasahin: Ang Hardin sa Likod ng Aking Tahanan</p>
+<p>Estratehiya: Graphic Organizer (Concept Web, Sensory Chart (Limang Pandama) at Visualization (Pag-iimagine))</p>
+<button onclick="showNext(1)">Sumunod</button>
+</div>
+
+<!-- STEP 2 -->
+<div class="content-box" id="content2" style="display:none;">
+<h2>Layunin ng Aralin</h2>
+<p>Pagkatapos ng gawain, ang mag-aaral ay inaasahang:</p>
+<ul>
+<li>natutukoy ang mg detalyeng deskriptibo sa teksto;</li>
+<li>nagagamit ang estratehiyang visualizaion at sensory chart sa pagunawa sa binasa;</li>
+<li>nakagagawa ng graphic organizer (conceot Web) batay sa teksto; at</li>
+<li>makasususlat o makaguguhit ng malikhaing paglalarawan ng isang lugar ang limang pandama.</li>
+</ul>
+<button onclick="showPrevious(2)">Bumalik</button>
+<button onclick="showNext(2)">Sumunod</button>
+</div>
+
+<!-- STEP 3 -->
+<div class="content-box" id="content3" style="display:none;">
+<h2>Panimulang Gawain (Pagganyak)</h2>
+<p>Visualization</p>
+<p>Panuto: Ipikit ang mga mata sa loob ng 30 segundo. Isipin ang isang lugar na nagpapasaya at nagpapakalma sa'yo (bakuran, probinsya, tabing-dagat, hardin).</p>
+
+<label>Ano ang nakikita mo?</label>
+<textarea name="nakikita" rows="3"></textarea>
+
+<label>Ano ang naaamoy at naririnig mo?</label>
+<textarea name="naaamoy_naririnig" rows="3"></textarea>
+
+<label>Ano ang pakiramdam mo sa lugar na iyon?</label>
+<textarea name="pakiramdam" rows="3"></textarea>
+
+<button onclick="showPrevious(3)">Bumalik</button>
+<button onclick="showNext(3)">Sumunod</button>
+</div>
+
+<!-- STEP 4 -->
+<div class="content-box" id="content4" style="display:none;">
+<h2>Gawain A. Talasalitaan</h2>
+<p>Panuto (Pinaghalo-halong Salita)</p>
+<p>Ayusin ang mga pinaghalo-halong titik upang mabuo ang tamang salita batay sa kahulugan sa pangungusap. Isulat ang sagot sa patlang.</p>
+<p>Marigold- uri ng bulaklak na dilaw /orange</p>
+<p>Marigold- uri ng bulaklak na dilaw /orange</p>
+<label for="">1. NIDRAH – Lugar na tinataniman ng iba’t ibang halaman.
+<input type="text" name="NIDRAH – Lugar na tinataniman ng iba’t ibang halaman. " placeholder="Sagot"><br>
+</label>
+<label for="">2. KOLUS – Bahagi o kanto ng isang lugar
+<input type="text" name=" KOLUS – Bahagi o kanto ng isang lugar" placeholder="Sagot"><br>
+</label>
+<label for="">3. TULOLOT – Makukulay na bahagi ng bulaklak. 
+<input type="text" name="TULOLOT – Makukulay na bahagi ng bulaklak. " placeholder="Sagot"><br>
+</label>
+<label for="">4. UNIH – Tunog o awit ng mga ibon
+<input type="text" name="UNIH – Tunog o awit ng mga ibon " placeholder="Sagot"><br>
+</label>
+<label for="">5. YOMIS – Banayad na ihip ng hangin.
+<input type="text" name="YOMIS – Banayad na ihip ng hangin." placeholder="Sagot"><br>
+</label>
+<button onclick="showPrevious(4)">Bumalik</button>
+<button onclick="showNext(4)">Sumunod</button>
+</div>
+<!-- STEP 5 -->
+<div class="content-box" id="content5" style="display:none;">
+<h2>Aralin / Babasahin</h2>
+<p>Basahin ang tekstong “Ang Hardin sa Likod ng Aking Tahanan”
+Pagkatapos, sagutin ang mga tanong at gawain sa ibaba. </p>
+<img src="images/b3.png" alt="" class="boook"><br>
+<p><strong>Ang Hardin sa Likod ng Aking Tahanan</strong></p>
+<p class="story">
+Sa likod ng aking bahay, may isang hardin na puno ng buhay at kulay. 
+Sa bawat sulok, makikita ang iba't ibang halaman. Mayroong  mga rosas na 
+may pulang makinang na talulot, marigold na sumasayaw sa sikat ng araw, 
+at mga halamang gulay na nagbibigay ng pagkain sa pamilya. Ang bango ng 
+bulaklak ay humahalo sa amoy ng sariwang damo, at tuwing umaga, naririnig 
+ang huni ng mga ibon at ang simoy ng hangin na dumadampi sa malalambot 
+na dahon. 
+</p>
+<p class="story">
+Sa gitna ng hardin, may maliit na balon ng tubig na umaagos ang 
+malinaw na tubig, nagbibigay ng malamig na simoy at nagpapaganda sa 
+paligid. Sa tabi nito, may upuan kung saan maaaring maupo at mamahinga 
+habang pinagmamasdan ang kagandahan ng hardin. Ang bawat halaman ay 
+maingat na inaalagaan, tinutubigan tuwing umaga, at pinuputulan ang tuyot 
+o sirang dahon upang manatiling malusog ang hardin.
+</p>
+<p class="story">
+Ang hardin na ito ay hindi lamang nagbibigay ng kasiyahan sa mata 
+kundi nagdadala rin ng kapayapaan sa puso. Tuwing naglalakad ako dito, 
+pakiramdam ko’y napapalayo ako sa abala ng mundo, at nararamdaman ko 
+ang tahimik na koneksyon sa kalikasan. Sa bawat kulay, amoy, at tunog ng 
+hardin, natututo akong pahalagahan ang kagandahan ng simpleng bagay at 
+ang tamis ng kapayapaan sa paligid na puno ng pagmamahal at pag-aalaga. 
+</p>
+
+<button onclick="showPrevious(5)">Bumalik</button>
+<button onclick="showNext(5)">Sumunod</button>
+</div>
+
+<!-- STEP 6 -->
+<div class="content-box" id="content6" style="display:none;">
+<h2>Graphic Organizer (Concept Web)</h2>
+<p><br>Panuto: Gumawa ng concept web tungkol sa “Hardin” at ilagay ang mga
+detalyeng naglalarawan dito. <br></p>
+<label>Hardin</label>
+<textarea name="Hardinconcept1" rows="2"></textarea>
+<textarea name="Hardinconcept2" rows="2"></textarea>
+<textarea name="Hardinconcept3" rows="2"></textarea>
+<textarea name="Hardinconcept4" rows="2"></textarea>
+<textarea name="Hardinconcept5" rows="2"></textarea>
+<textarea name="Hardinconcept6" rows="2"></textarea>
+<textarea name="Hardinconcept7" rows="2"></textarea>
+
+<button onclick="showPrevious(6)">Bumalik</button>
+<button onclick="showNext(6)">Sumunod</button>
+</div>
+
+<!-- STEP 7 -->
+<div class="content-box" id="content7" style="display:none;">
+<h2>Sensory Chart</h2>
+<p><br>Panuto: Punan ang tsart batay sa mga detalyeng binanggit sa teksto <br></p>
+<label>Nakikita:</label>
+<textarea name="nakikita_chart1" rows="3" placeholder="hal- rosa"></textarea>
+<textarea name="nakikita_chart2" rows="3" placeholder="hal- rosa"></textarea>
+<textarea name="nakikita_chart3" rows="3" placeholder="hal- rosa"></textarea>
+<label>Naririnig:</label>
+<textarea name="naririnig_chart1" rows="3" placeholder="hal- huni ng ibon"></textarea>
+<textarea name="naririnig_chart2" rows="3" placeholder="hal- huni ng ibon"></textarea>
+<textarea name="naririnig_chart3" rows="3" placeholder="hal- huni ng ibon"></textarea>
+<label>Naaamoy:</label>
+<textarea name="naaamoy_chart1" rows="3" placeholder="hal- sariwang damo"></textarea>
+<textarea name="naaamoy_chart2" rows="3" placeholder="hal- sariwang damo"></textarea>
+<textarea name="naaamoy_chart3" rows="3" placeholder="hal- sariwang damo"></textarea>
+<label>Nahahawakan/Nararamdaman:</label>
+<textarea name="nahahawakan_chart1" rows="3" placeholder="hal- malamig na tubig"></textarea>
+<textarea name="nahahawakan_chart2" rows="3" placeholder="hal- malamig na tubig"></textarea>
+<textarea name="nahahawakan_chart3" rows="3" placeholder="hal- malamig na tubig"></textarea>
+<label>Nararamdam sa puso:</label>
+<textarea name="puso_chart1" rows="3" placeholder="kapayapaan"></textarea>
+<textarea name="puso_chart2" rows="3" placeholder="kapayapaan"></textarea>
+<textarea name="puso_chart3" rows="3" placeholder="kapayapaan"></textarea>
+<button onclick="showPrevious(7)">Bumalik</button>
+<button onclick="showNext(7)">Sumunod</button>
+</div>
+
+<!-- STEP 8 -->
+<div class="content-box" id="content8" style="display:none;">
+<h2>Gawain C. Pag-unawa at Pagpapalalim sa Binasa</h2><br>
+<p>Panuto: Sagutin ang mga tanong batay sa teksto.
+</p>
+<p>1. Ano ang pangunahing laman ng hardin na binanggit sa teksto?</p><br>
+<textarea name="Ano ang pangunahing laman ng hardin na binanggit sa teksto?" rows="3" placeholder=""></textarea><br>
+<p>2. Ano ang tunog ang naririnig sa hardin tuwing umaga?</p><br>
+<textarea name="Ano ang tunog ang naririnig sa hardin tuwing umaga?" rows="3" placeholder=""></textarea><br>
+<p>3. Ano ang ginagawa ng nagsasalaysay sa hardin?</p><br>
+<textarea name="Ano ang ginagawa ng nagsasalaysay sa hardin?" rows="3" placeholder=""></textarea><br>
+<p>4. Ano ang nararamdaman ng nagsasalaysay habang nagmamasid sa mga halaman?</p><br>
+<textarea name="Ano ang nararamdaman ng nagsasalaysay habang nagmamasid sa mga halaman?" rows="3" placeholder=""></textarea>
+
+<button onclick="showPrevious(8)">Bumalik</button>
+<button onclick="showNext(8)">Sumunod</button>
+</div>
+
+<!-- STEP 9 -->
+<div class="content-box" id="content9" style="display:none;">
+<h2>Gawain D. Malikhaing Gawain (Performance Task – Maikli)</h2><br>
+<p>Panuto: Sumulat ng maikling deskriptibong talata tungkol sa isang lugar na
+nagpapasaya saýo (hal. bakuran, silid, paboritong tambayan). Gumamit ng
+detalyeng pandama (nakikita, naririnig, naaamoy, nararamdaman).
+</p><br>
+
+<input type="text" name="pamagat" placeholder="Pamagat">
+<textarea name="malikhaing_talata" rows="6"></textarea>
+<p>Pamantayan sa Pagmamarka (Rubric – Maikli) <br>
+❖ Nilalaman at Mensahe (5 pts) – malinaw na naipakita ang ideya ng 
+kapayapaan at pag-aalaga <br>
+❖ Pagkamalikhain (5 pts) – orihinal ang ideya at presentasyon <br>
+❖ Kalinisan at Ayos (5 pts) – maayos ang gawa at malinaw ang 
+sulat/guhit <br>
+❖ Pagsunod sa Panuto (5 pts) – nasunod ang napiling gawain <br>
+❖ Kabuuan: 20 puntos </p>
+<button onclick="showPrevious(9)">Bumalik</button>
+<button onclick="showNext(9)">Sumunod</button>
+</div>
+
+<!-- STEP 10 -->
+<div class="content-box" id="content10" style="display:none;">
+<h2>Pagninilay</h2><br>
+<p>Panuto: Kumpletuhin ang pangungusap: </p>
+<p>1. Natutunan ko sa teksto na ang kapaligiran ay...</p><br>
+<textarea name="Natutunan ko sa teksto na ang kapaligiran ay..." rows="3" placeholder=""></textarea><br>
+<p>2.Kung ako ay may sariling hardin o paboritong lugar, gagawin ko itong...</p><br>
+<textarea name="Kung ako ay may sariling hardin o paboritong lugar, gagawin ko itong..." rows="3" placeholder=""></textarea>
+
+<button onclick="showPrevious(10)">Bumalik</button>
+<button onclick="finish()">Natapos</button>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const currentUser = localStorage.getItem("currentUser");
+    if(!currentUser){
+        alert("Please log in first!");
+        window.location.href = "index.html";
+        return;
+    }
+
+    // Ginamit ang 'answers3' para sa Aralin 3 data
+    let answers = JSON.parse(localStorage.getItem("answers3")) || {};
+
+    // ==========================================
+    // SHOW NEXT WITH REQUIRED FIELD VALIDATION
+    // ==========================================
+    window.showNext = function(current){
+        const currentBox = document.getElementById("content" + current);
+        const inputs = currentBox.querySelectorAll("input, textarea");
+        let allFilled = true;
+
+        // Check kung may sagot ang lahat ng fields sa kasalukuyang step
+        inputs.forEach(input => {
+            if(input.value.trim() === ""){
+                allFilled = false;
+                input.style.borderColor = "red"; // Highlight kung kulang
+            } else {
+                input.style.borderColor = "#7fffd4"; // Ibalik sa mint kung okay
+            }
+        });
+
+        if(!allFilled){
+            alert("Mangyaring punan ang lahat ng patlang sa aktibidad na ito bago magpatuloy.");
+            return; 
+        }
+
+        const next = document.getElementById("content"+(current+1));
+        if(next){
+            document.getElementById("content"+current).style.display = "none";
+            next.style.display = "block";
+            window.scrollTo(0, 0);
+        }
+    }
+
+    window.showPrevious = function(current){
+        const prev = document.getElementById("content"+(current-1));
+        if(prev){
+            document.getElementById("content"+current).style.display = "none";
+            prev.style.display = "block";
+            window.scrollTo(0, 0);
+        }
+    }
+
+    // =========================
+    // LOAD SAVED ANSWERS
+    // =========================
+    if(answers[currentUser]){
+        for(let step=3; step<=10; step++){
+            const box = document.getElementById("content"+step);
+            if(box){
+                box.querySelectorAll("input, textarea").forEach(input => {
+                    if(answers[currentUser][input.name]){
+                        input.value = answers[currentUser][input.name];
+                        input.disabled = true; // Lock fields kung tapos na
+                    }
+                });
+            }
+        }
+        window.finish = function(){
+            window.location.href = "mgaaralin.html";
+        }
+    } else {
+        // =========================
+        // FINISH (SAVE DATA)
+        // =========================
+        window.finish = function(){
+            const lastBox = document.getElementById("content10");
+            const lastInputs = lastBox.querySelectorAll("textarea");
+            let lastFilled = true;
+
+            lastInputs.forEach(input => {
+                if(input.value.trim() === "") {
+                    lastFilled = false;
+                    input.style.borderColor = "red";
+                }
+            });
+
+            if(!lastFilled){
+                alert("Pakisagutan ang pagninilay bago tapusin ang aralin.");
+                return;
+            }
+
+            answers[currentUser] = {};
+            for(let step=3; step<=10; step++){
+                const box = document.getElementById("content"+step);
+                if(box){
+                    box.querySelectorAll("input, textarea").forEach(input => {
+                        answers[currentUser][input.name] = input.value;
+                        input.disabled = true;
+                    });
+                }
+            }
+            
+            localStorage.setItem("answers3", JSON.stringify(answers));
+            alert("Salamat sa iyong masusing paglalarawan! Tapos na ang Aralin 3.");
+            window.location.href = "mgaaralin.html";
+        }
+    }
+});
+</script>
+
+</body>
+</html>

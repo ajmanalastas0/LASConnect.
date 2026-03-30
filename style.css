@@ -1,0 +1,127 @@
+/* style.css */
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/back.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.bb1 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(127, 255, 212, 0.2); /* Inadjust sa aquamarine base ng pic */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    max-width: 900px;
+    width: 90%;
+}
+
+/* Left section - image */
+.k1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.k1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Right section - form */
+.k2 {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.k2 img {
+    width: 130px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+}
+/* Title */
+.a11 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(127, 255, 212, 0.7); /* Match sa background waves */
+}
+
+/* Form styling */
+.aj {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input fields */
+.user, .pass {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #45b797; /* Pinalitan ang 0f3a1f ng dark mint */
+    outline: none;
+    font-size: 1em;
+}
+
+/* On focus */
+.user:focus, .pass:focus {
+    border-color: #7fffd4; /* Aquamarine highlight */
+    box-shadow: 0 0 8px rgba(69, 183, 151, 0.5);
+}
+
+/* Checkbox label */
+.show {
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Buttons */
+.b1, .b2 {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.b1 {
+    background-color: rgba(127, 255, 212, 0.7); /* Mas malapit sa image color */
+}
+
+.b1:hover {
+    background-color: #2d5a4c; /* Darker green para sa contrast sa hover */
+    transform: translateY(-2px);
+    color: white;
+}
+
+.b2 {
+     background-color: rgba(127, 255, 212, 0.7);
+}
+
+.b2:hover {
+    background-color: #2d5a4c;
+    transform: translateY(-2px);
+    color: white;
+}

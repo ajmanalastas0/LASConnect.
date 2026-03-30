@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aking mga Sagot</title>
+    <link rel="stylesheet" href="aralincss.css"> 
+    <style>
+        .answers-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .aralin-section {
+            border-bottom: 2px solid #7fffd4;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+        }
+        .aralin-title { color: #2c3e50; border-left: 5px solid #7fffd4; padding-left: 10px; }
+        .answer-item { margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 5px; }
+        .question-label { font-weight: bold; color: #555; display: block; margin-bottom: 5px; font-size: 0.9em; }
+        .user-answer { color: #333; font-style: italic; word-wrap: break-word; }
+        .no-data { text-align: center; color: #999; padding: 20px; }
+        
+        /* Button Styles */
+        .back-btn { 
+            background: #7fffd4; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin-bottom: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .back-btn:hover { background: #66e0bb; }
+        
+        .bottom-nav {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="answers-container">
+        
+        
+        <h1>Summary ng Aking mga Sagot</h1>
+        <hr>
+        
+        <div id="displayArea">
+            </div>
+
+        <div class="bottom-nav">
+            <button class="back-btn" onclick="window.location.href='mgaaralin.html'">Tapos na Tignan / Bumalik sa Mga Aralin</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const currentUser = localStorage.getItem("currentUser");
+            const displayArea = document.getElementById("displayArea");
+
+            if(!currentUser){
+                alert("Please log in first!");
+                window.location.href = "index.html";
+                return;
+            }
+
+            const aralinKeys = [
+                { id: "Aralin 1", key: "answers" },
+                { id: "Aralin 2", key: "answers2" },
+                { id: "Aralin 3", key: "answers3" },
+                { id: "Aralin 4", key: "answers4" },
+                { id: "Aralin 5", key: "answers5" }
+            ];
+
+            let foundAny = false;
+
+            aralinKeys.forEach(aralin => {
+                const allData = JSON.parse(localStorage.getItem(aralin.key)) || {};
+                const userData = allData[currentUser];
+
+                if(userData) {
+                    foundAny = true;
+                    const section = document.createElement("div");
+                    section.className = "aralin-section";
+                    section.innerHTML = `<h2 class="aralin-title">${aralin.id}</h2>`;
+
+                    for (let key in userData) {
+                        const data = userData[key];
+                        
+                        // Check kung flat structure o nested (para sa compatibility ng A1/A2 update mo)
+                        if (typeof data === 'string') {
+                            section.innerHTML += createAnswerHTML(key, data);
+                        } 
+                        else {
+                            for (let subKey in data) {
+                                section.innerHTML += createAnswerHTML(subKey, data[subKey]);
+                            }
+                        }
+                    }
+                    displayArea.appendChild(section);
+                }
+            });
+
+            if(!foundAny) {
+                displayArea.innerHTML = "<p class='no-data'>Wala ka pang naisusumiteng sagot sa anumang aralin.</p>";
+            }
+        });
+
+        function createAnswerHTML(label, value) {
+            // Nililinis ang label (halimbawa: "hamon_na_naranasan" -> "HAMON NA NARANASAN")
+            const cleanLabel = label.replace(/_/g, " ").toUpperCase();
+            return `
+                <div class="answer-item">
+                    <span class="question-label">${cleanLabel}:</span>
+                    <div class="user-answer">${value || "Walang sagot"}</div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
